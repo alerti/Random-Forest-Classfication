@@ -49,7 +49,7 @@ lastoken=fileptoken[len(fileptokens)-1]
 return features,train
 
 
-#lets use regression random forest classifier import lib;create model;train;predict
+#2.lets use regression random forest classifier import lib;create model;train;predict
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -60,7 +60,7 @@ dictionary=make_Dictionary(train_data) print "reading and proccessing data from 
 features,labels=extract_features(train_data)
 test_feature,test_label=extract_features(test_data)
 
-#model
+#3.model
 model=RandomForestClassifier()
 
 print "training model"
@@ -72,4 +72,4 @@ print accuracy(test_data,predict)
 
 
 
-#its that simple. remember am using python 2.7 for python 3 you will need some lttle twists of the code.
+#its that simple. remember am using python 2.7 for python 3 you will need some little twists of the code.
